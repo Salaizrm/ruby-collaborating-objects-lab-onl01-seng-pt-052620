@@ -6,4 +6,13 @@ class MP3Importer
     @path = path
   end
 
+  def files
+    @files ||=
+  end
+
+  def import(files)
+    files.each{ |filename| Song.files(filename) }
+  end
+
+
 end
