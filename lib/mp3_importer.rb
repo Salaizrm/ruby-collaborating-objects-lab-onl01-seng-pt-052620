@@ -7,11 +7,11 @@ class MP3Importer
   end
 
   def files
-    @files ||=
+    @files
   end
 
   def import(files)
-    files.each{ |filename| Song.files(filename) }
+    files.each { |filename| Song.files(filename) }
   end
 
 
